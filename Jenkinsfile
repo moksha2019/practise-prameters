@@ -3,7 +3,7 @@ pipeline {
         label 'java-node'
     }
     parameters {
-        string(name: CHG_TKT, defaultValue: CHG12345, description: 'Enter the  change  ticket number:')
+        string(name: 'CHG_TKT', defaultValue: 'CHG12345', description: 'Enter the  change  ticket number:')
         booleanParam(name: 'SRE_APPROVE', defaultValue: true, description: 'Is change SRE approved')
         choice(name: 'CHOICES', choices: ['DEV', 'STAGE', 'PROD'], description: 'Please Select the  Environment')
     }
