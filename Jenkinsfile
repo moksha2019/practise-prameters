@@ -1,3 +1,4 @@
+//  This pipeline will execute in PROD  when  u  chose the "PROD" in the choices  if not  stage will be  skipped.
 pipeline {
     agent {
         label 'java-node'
